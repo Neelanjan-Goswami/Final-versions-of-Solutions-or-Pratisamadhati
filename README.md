@@ -1,2 +1,2 @@
 # Pratisamadhati
-To solve the problems
+To solve the problems of the worlds
