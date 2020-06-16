@@ -13,5 +13,6 @@ process(A,B,Cin) is
 begin
 	Sum <= A xor B xor Cin;
 	Cout <= (A and B) or (B and Cin) or (Cin and A);
+	
 end process;
 end behavioral;	
