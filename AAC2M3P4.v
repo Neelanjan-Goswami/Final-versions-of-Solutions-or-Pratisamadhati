@@ -1,7 +1,6 @@
 module Majority (A, B, C, Y);                 	
    input  A, B, C;			
    output Y; 
-
    reg Y;           		
                    	          	
 // student code here
