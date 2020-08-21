@@ -1,0 +1,25 @@
+// In this example we want to turn the Duke Blue pixels of the Duke logo yellow. Since only
+//the white pixels have a red value of 255, we can use that condition in our if statement 
+//to identify the pixels we want to change. To turn the pixel yellow, we set its green and 
+//red values to 255 and blue value to 0.
+var img = new SimpleImage("duke_blue_devil.png");
+print(img);
+for( var pixel of img.values()){
+    Y();
+}
+function Y()
+{
+    if(pixel.getRed()<255){
+        pixel.setRed(255);
+        pixel.setGreen(255);
+        pixel.setBlue(0);
+    }
+    else {
+        pixel.setRed(255);
+        pixel.setGreen(255);
+        pixel.setBlue(255);
+    }
+    //pixel.setRed(pixel.getGreen());
+    //pixel.setGreen(pixel.getRed());
+}
+print(img);

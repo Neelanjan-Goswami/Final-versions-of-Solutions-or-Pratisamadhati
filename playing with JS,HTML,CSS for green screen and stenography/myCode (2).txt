@@ -1,0 +1,15 @@
+var img= new SimpleImage("hilton.jpg");
+var w = img.getWidth();
+w=w/3
+for(var pixel of img.values()){
+    if(pixel.getX()<w){
+        pixel.setRed(255);
+    }
+    else if(pixel.getX()<(2*w)){
+        pixel.setGreen(255);
+    }
+    else if(pixel.getX()<img.getWidth()){
+        pixel.setBlue(255);
+    }
+}
+print(img);

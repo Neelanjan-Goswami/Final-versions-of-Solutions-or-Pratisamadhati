@@ -1,0 +1,26 @@
+//addBorder
+var img= new SimpleImage("smallpanda.png");
+print(img);
+addBorder(img);
+print(img);
+function addBorder(x){
+    for(var px of x.values()){
+        if(px.getX()<10){
+            bl(px);
+        }
+        else if(px.getX()>img.getWidth()-11){
+            bl(px);
+        }
+        if(px.getY()<10){
+            bl(px);
+        }
+        else if(px.getY()>img.getHeight()-11){
+            bl(px);
+        }
+    }
+}
+function bl(px){
+    px.setRed(0);
+    px.setGreen(0);
+    px.setBlue(0);
+}

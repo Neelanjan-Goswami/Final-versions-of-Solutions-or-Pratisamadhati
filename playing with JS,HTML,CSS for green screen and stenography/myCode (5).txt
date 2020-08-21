@@ -1,0 +1,18 @@
+//Greenscrreen
+var img=new SimpleImage("drewRobert.png");
+var img2=new SimpleImage("dinos.png");
+var op=new SimpleImage(img.getWidth(),img.getHeight());
+for (var pixel of img.values()){
+    if(pixel.getGreen()>pixel.getRed()+pixel.getBlue()){
+        var x=pixel.getX();
+        var y=pixel.getY();
+        var px = img2.getPixel(x,y);
+        op.setPixel(x,y,px);
+    }
+    else{
+        op.setPixel(pixel.getX(),pixel.getY(),pixel);
+    }
+}
+print(img);
+print(img2);
+print(op);

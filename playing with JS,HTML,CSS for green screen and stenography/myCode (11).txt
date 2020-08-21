@@ -1,0 +1,26 @@
+var img=new SimpleImage("skyline.jpg");
+print(img);
+
+function gs(){
+  
+  for(var pixel of img.values()){
+    var px=(pixel.getRed() + pixel.getGreen() + pixel.getBlue()) / 3;
+    
+    pixel.setRed(px);
+    pixel.setGreen(px);
+    pixel.setBlue(px);
+    
+  }
+}
+gs();
+print(img);
+
+var flower = new SimpleImage("eastereggs.jpg");
+print(flower);
+for (var p of flower.values()) {
+    var avg = (p.getGreen() + p.getRed() + p.getBlue()) / 3;
+    p.setRed(avg);
+    p.setBlue(avg);
+    p.setGreen(avg);
+}
+print(flower);

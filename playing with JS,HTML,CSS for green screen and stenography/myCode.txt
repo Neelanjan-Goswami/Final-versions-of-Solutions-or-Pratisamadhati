@@ -1,0 +1,9 @@
+function hw(x){
+    var h=x.getHeight();
+    var w=x.getWidth();
+    print(h);
+    print(w);
+    print(x)
+}
+var x = new SimpleImage("chapel.png");
+hw(x);
